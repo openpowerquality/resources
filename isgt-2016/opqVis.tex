@@ -1,0 +1,55 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{cite}
+
+\ifCLASSINFOpdf
+  \usepackage[pdftex]{graphicx}
+\else
+  \usepackage[dvips]{graphicx}
+\fi
+
+%\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+
+\title{OpenPowerQuality: An Open Source Framework for Power Quality Collection, Analysis, Visualization, and Privacy}
+
+\author{\IEEEauthorblockN{A. Christe, S. Negrashov, P. Johnson}
+\IEEEauthorblockA{Deptartment of Information and Computer Sciences,  
+University of Hawaii at Manoa\\
+Email: (achriste, sin8, johnson)@hawaii.edu}
+}
+
+\maketitle
+
+\begin{abstract}
+As power grids transition from a centralized distribution model to a distributed model, maintaining grid stability requires real-time power quality (PQ) monitoring and visualization.  As part of the Open Power Quality (OPQ) project, we designed and deployed a set of open source power quality monitors and an open source cloud-based aggregation and visualization system built with the utility customer in mind. Our aim is to leverage a flexible privacy model combined with inexpensive and easy to use PQ meters in order to deploy a high density power quality monitoring network across the Hawaiian islands. In this paper we describe OPHub, a privacy focused open source PQ visualization along with results of a small scale deployment of our prototype PQ meter across the island of Oahu. Our results demonstrate that OPQ can provide useful power quality data at an order of magnitude less cost than prior approaches.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Power Quality, Smart Grid, Data Visualization, Privacy, Open Source Hardware, Open Source Software, Distributed Power Generation, Wireless Sensor Network
+\end{IEEEkeywords}
+
+\IEEEpeerreviewmaketitle
+
+\section{Introduction}
+\input{intro}
+
+\section{Privacy}
+\input{privacy}
+
+\section{Visualisation}
+\input{vis}
+
+\section{Pilot}
+\input{pilot}
+
+\section{Conclusion \& Future Work}
+\input{conclusion}
+
+\bibliographystyle{IEEEtran}
+\bibliography{refs}
+
+\end{document}
+
+

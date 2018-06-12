@@ -1,0 +1,7 @@
+NIST describes privacy as one the main areas of focus and concern when implementing smart grid technologies\cite{p:kursawe_privacy_friendly_2011} and specifically proposes using ``privacy by design" as an ideal approach. The White House Big Data paper\cite{whitehouse} points out that privacy can be compromised even with perfect security and must be included as another layer and maintained on top of security. Baumeister \cite{baumeister2010literature} mentions that smart grid technologies should "motivate and include consumers". For these reasons, we decided to make privacy a top design goal for our project.
+
+All data is collected on our servers, but identifiable information is not included by default. A user has the ability to decide if they alone will use their data or if they would like to share anonymized data with the community. With every user that decides to share their data, our knowledge of the state of the grid improves.
+
+Baumeister\cite{baumeister2010literature} describes the importance of anonymizing data and the attack vectors that can be made against non-anonymized data. We do not share identifying information publically and strip as much superfluous information as possible.
+
+When visualizing PQ data, we give the user the ability to select the granularity of their data collection device's location. We achieve this by using a custom quad-tree based map that is described in subsequent sections.
